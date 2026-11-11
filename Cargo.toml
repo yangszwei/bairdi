@@ -1,0 +1,13 @@
+[workspace]
+resolver = "3"
+members = ["apps/*"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+
+[workspace.dependencies]
+tokio = { version = "1.54.1", default-features = false }
+
+[workspace.lints.clippy]
+undocumented_unsafe_blocks = "warn"
